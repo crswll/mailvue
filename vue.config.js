@@ -2,6 +2,7 @@
 
 var sass = require('node-sass');
 var autoprefixer = require('autoprefixer-core');
+var postcss = require('postcss');
 
 module.exports = function(compiler) {
   compiler.register({
@@ -13,8 +14,8 @@ module.exports = function(compiler) {
       }, function (err, res) {
         if (err) return err;
         var css = res.css.toString();
-        var prefixedCss = autoprefixer.process(css, { safe: true }).css;
-        cb(err, prefixedCss);
+        var prefixed = postcss([autoprefixer]).process(css);
+        cb(err, prefixed);
       });
     }
   });

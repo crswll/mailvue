@@ -2,9 +2,6 @@ var Vue = require('vue');
 
 Vue.options.replace = true;
 
-Vue.use(require('vue-touch'));
-Vue.use(require('vue-resource'));
-
 var app = new Vue(require('./app.vue')).$mount('#app');
 
 var director = require('director');
