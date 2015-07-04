@@ -1,6 +1,4 @@
-# Vue Starter
-
-This is just a quick start for Vue development.
+# MailVue
 
 ## Install
 Run `npm install`.

@@ -1,0 +1,20 @@
+.button {
+  background-color: #ccc;
+  border-radius: 20px;
+  padding: 0.2em 1em;
+  position: relative;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    top: 1px;
+  }
+
+  &--compose {
+    background-color: $color--blue;
+    color: $color--white;
+    font-size: 1.2em;
+  }
+}

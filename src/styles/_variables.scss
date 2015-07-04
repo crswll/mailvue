@@ -1,2 +1,9 @@
-$color--black: rgba(0, 0, 0, 1);
-$color--white: rgba(255, 255, 255, 1);
+$color--black: hsl(0, 0%, 0%);
+$color--white: hsl(0, 0%, 100%);
+
+$color--gray--light: hsl(0, 0%, 70%);
+$color--gray: hsl(0, 0%, 50%);
+$color--gray--dark: hsl(0, 0%, 30%);
+
+$color--blue: hsl(206, 94%, 54%);
+$color--yellow: hsl(42, 100%, 85%);
